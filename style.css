@@ -1,0 +1,48 @@
+/* Estilos para o menu responsivo */
+.menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-links {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {
+    display: none;
+  }
+
+  .menu a.menu-icon {
+    float: right;
+    display: block;
+  }
+
+  .menu.responsive {
+    position: relative;
+  }
+
+  .menu.responsive .menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu.responsive .menu-links {
+    display: block;
+    width: 100%;
+  }
+}
